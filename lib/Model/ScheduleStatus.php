@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Schedule\Model;
+namespace Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model;
 
 use \ArrayAccess;
 
@@ -59,7 +59,7 @@ class ScheduleStatus implements ArrayAccess
         'name' => 'string',
         'default_flag' => 'bool',
         'show_as_tentative_flag' => 'bool',
-        '_info' => '\Spinen\ConnectWise\Clients\Schedule\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -269,7 +269,7 @@ class ScheduleStatus implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Schedule\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata
      */
     public function getInfo()
     {
@@ -278,7 +278,7 @@ class ScheduleStatus implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Schedule\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

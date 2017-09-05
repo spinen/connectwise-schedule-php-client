@@ -1,6 +1,6 @@
 <?php
 /**
- * ScheduleTypeReference
+ * ScheduleReminderTime
  *
  * PHP version 5
  *
@@ -32,7 +32,7 @@ namespace Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedul
 use \ArrayAccess;
 
 /**
- * ScheduleTypeReference Class Doc Comment
+ * ScheduleReminderTime Class Doc Comment
  *
  * @category    Class */
 /**
@@ -40,7 +40,7 @@ use \ArrayAccess;
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ScheduleTypeReference implements ArrayAccess
+class ScheduleReminderTime implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,7 +48,7 @@ class ScheduleTypeReference implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'ScheduleTypeReference';
+    protected static $swaggerModelName = 'ScheduleReminderTime';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -56,7 +56,9 @@ class ScheduleTypeReference implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'identifier' => 'string',
+        'time' => 'int',
+        'description' => 'string',
+        'default_flag' => 'bool',
         '_info' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata'
     ];
 
@@ -71,7 +73,9 @@ class ScheduleTypeReference implements ArrayAccess
      */
     protected static $attributeMap = [
         'id' => 'id',
-        'identifier' => 'identifier',
+        'time' => 'time',
+        'description' => 'description',
+        'default_flag' => 'defaultFlag',
         '_info' => '_info'
     ];
 
@@ -82,7 +86,9 @@ class ScheduleTypeReference implements ArrayAccess
      */
     protected static $setters = [
         'id' => 'setId',
-        'identifier' => 'setIdentifier',
+        'time' => 'setTime',
+        'description' => 'setDescription',
+        'default_flag' => 'setDefaultFlag',
         '_info' => 'setInfo'
     ];
 
@@ -93,7 +99,9 @@ class ScheduleTypeReference implements ArrayAccess
      */
     protected static $getters = [
         'id' => 'getId',
-        'identifier' => 'getIdentifier',
+        'time' => 'getTime',
+        'description' => 'getDescription',
+        'default_flag' => 'getDefaultFlag',
         '_info' => 'getInfo'
     ];
 
@@ -129,7 +137,9 @@ class ScheduleTypeReference implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['identifier'] = isset($data['identifier']) ? $data['identifier'] : null;
+        $this->container['time'] = isset($data['time']) ? $data['time'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['default_flag'] = isset($data['default_flag']) ? $data['default_flag'] : null;
         $this->container['_info'] = isset($data['_info']) ? $data['_info'] : null;
     }
 
@@ -141,6 +151,10 @@ class ScheduleTypeReference implements ArrayAccess
     public function listInvalidProperties()
     {
         $invalid_properties = [];
+        if (!is_null($this->container['description']) && (strlen($this->container['description']) > 10)) {
+            $invalid_properties[] = "invalid value for 'description', the character length must be smaller than or equal to 10.";
+        }
+
         return $invalid_properties;
     }
 
@@ -152,6 +166,9 @@ class ScheduleTypeReference implements ArrayAccess
      */
     public function valid()
     {
+        if (strlen($this->container['description']) > 10) {
+            return false;
+        }
         return true;
     }
 
@@ -178,22 +195,68 @@ class ScheduleTypeReference implements ArrayAccess
     }
 
     /**
-     * Gets identifier
-     * @return string
+     * Gets time
+     * @return int
      */
-    public function getIdentifier()
+    public function getTime()
     {
-        return $this->container['identifier'];
+        return $this->container['time'];
     }
 
     /**
-     * Sets identifier
-     * @param string $identifier
+     * Sets time
+     * @param int $time Time is calculated in minutes
      * @return $this
      */
-    public function setIdentifier($identifier)
+    public function setTime($time)
     {
-        $this->container['identifier'] = $identifier;
+        $this->container['time'] = $time;
+
+        return $this;
+    }
+
+    /**
+     * Gets description
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->container['description'];
+    }
+
+    /**
+     * Sets description
+     * @param string $description
+     * @return $this
+     */
+    public function setDescription($description)
+    {
+        if (!is_null($description) && (strlen($description) > 10)) {
+            throw new \InvalidArgumentException('invalid length for $description when calling ScheduleReminderTime., must be smaller than or equal to 10.');
+        }
+
+        $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets default_flag
+     * @return bool
+     */
+    public function getDefaultFlag()
+    {
+        return $this->container['default_flag'];
+    }
+
+    /**
+     * Sets default_flag
+     * @param bool $default_flag
+     * @return $this
+     */
+    public function setDefaultFlag($default_flag)
+    {
+        $this->container['default_flag'] = $default_flag;
 
         return $this;
     }

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Schedule\Model;
+namespace Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model;
 
 use \ArrayAccess;
 
@@ -58,10 +58,10 @@ class ScheduleType implements ArrayAccess
         'id' => 'int',
         'name' => 'string',
         'identifier' => 'string',
-        'charge_code' => '\Spinen\ConnectWise\Clients\Schedule\Model\ChargeCodeReference',
-        'where' => '\Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference',
+        'charge_code' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ChargeCodeReference',
+        'where' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference',
         'system_flag' => 'bool',
-        '_info' => '\Spinen\ConnectWise\Clients\Schedule\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -275,7 +275,7 @@ class ScheduleType implements ArrayAccess
 
     /**
      * Gets charge_code
-     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ChargeCodeReference
+     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ChargeCodeReference
      */
     public function getChargeCode()
     {
@@ -284,7 +284,7 @@ class ScheduleType implements ArrayAccess
 
     /**
      * Sets charge_code
-     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ChargeCodeReference $charge_code
+     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ChargeCodeReference $charge_code
      * @return $this
      */
     public function setChargeCode($charge_code)
@@ -296,7 +296,7 @@ class ScheduleType implements ArrayAccess
 
     /**
      * Gets where
-     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference
+     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference
      */
     public function getWhere()
     {
@@ -305,7 +305,7 @@ class ScheduleType implements ArrayAccess
 
     /**
      * Sets where
-     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference $where
+     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference $where
      * @return $this
      */
     public function setWhere($where)
@@ -338,7 +338,7 @@ class ScheduleType implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Schedule\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata
      */
     public function getInfo()
     {
@@ -347,7 +347,7 @@ class ScheduleType implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Schedule\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

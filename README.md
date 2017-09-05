@@ -85,6 +85,11 @@ Class | Method | HTTP request | Description
 *ScheduleEntriesApi* | [**scheduleEntriesIdPatch**](docs/Api/ScheduleEntriesApi.md#scheduleentriesidpatch) | **PATCH** /schedule/entries/{id} | 
 *ScheduleEntriesApi* | [**scheduleEntriesIdPut**](docs/Api/ScheduleEntriesApi.md#scheduleentriesidput) | **PUT** /schedule/entries/{id} | 
 *ScheduleEntriesApi* | [**scheduleEntriesPost**](docs/Api/ScheduleEntriesApi.md#scheduleentriespost) | **POST** /schedule/entries | 
+*ScheduleReminderTimesApi* | [**scheduleReminderTimesCountGet**](docs/Api/ScheduleReminderTimesApi.md#scheduleremindertimescountget) | **GET** /schedule/reminderTimes/count | 
+*ScheduleReminderTimesApi* | [**scheduleReminderTimesGet**](docs/Api/ScheduleReminderTimesApi.md#scheduleremindertimesget) | **GET** /schedule/reminderTimes | 
+*ScheduleReminderTimesApi* | [**scheduleReminderTimesIdGet**](docs/Api/ScheduleReminderTimesApi.md#scheduleremindertimesidget) | **GET** /schedule/reminderTimes/{id} | 
+*ScheduleReminderTimesApi* | [**scheduleReminderTimesIdPatch**](docs/Api/ScheduleReminderTimesApi.md#scheduleremindertimesidpatch) | **PATCH** /schedule/reminderTimes/{id} | 
+*ScheduleReminderTimesApi* | [**scheduleReminderTimesIdPut**](docs/Api/ScheduleReminderTimesApi.md#scheduleremindertimesidput) | **PUT** /schedule/reminderTimes/{id} | 
 *ScheduleStatusesApi* | [**scheduleStatusesCountGet**](docs/Api/ScheduleStatusesApi.md#schedulestatusescountget) | **GET** /schedule/statuses/count | 
 *ScheduleStatusesApi* | [**scheduleStatusesGet**](docs/Api/ScheduleStatusesApi.md#schedulestatusesget) | **GET** /schedule/statuses | 
 *ScheduleStatusesApi* | [**scheduleStatusesIdDelete**](docs/Api/ScheduleStatusesApi.md#schedulestatusesiddelete) | **DELETE** /schedule/statuses/{id} | 
@@ -112,6 +117,7 @@ Class | Method | HTTP request | Description
  - [PatchOperation](docs/Model/PatchOperation.md)
  - [ReminderReference](docs/Model/ReminderReference.md)
  - [ScheduleEntry](docs/Model/ScheduleEntry.md)
+ - [ScheduleReminderTime](docs/Model/ScheduleReminderTime.md)
  - [ScheduleSpanReference](docs/Model/ScheduleSpanReference.md)
  - [ScheduleStatus](docs/Model/ScheduleStatus.md)
  - [ScheduleStatusReference](docs/Model/ScheduleStatusReference.md)
