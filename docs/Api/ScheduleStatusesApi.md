@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **scheduleStatusesCountGet**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count scheduleStatusesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\Schedule\Model\Count scheduleStatusesCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleStatusesGet**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[] scheduleStatusesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[] scheduleStatusesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]**](../Model/ScheduleStatus.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]**](../Model/ScheduleStatus.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleStatusesIdGet**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus scheduleStatusesIdGet($id)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus scheduleStatusesIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/ScheduleStatus.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/ScheduleStatus.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleStatusesIdPatch**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus scheduleStatusesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus scheduleStatusesIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->se
 
 $api_instance = new Spinen\ConnectWise\Clients\Schedule\Api\ScheduleStatusesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->scheduleStatusesIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/ScheduleStatus.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/ScheduleStatus.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleStatusesIdPut**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus scheduleStatusesIdPut($id, $schedule_status)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus scheduleStatusesIdPut($id, $schedule_status)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->se
 
 $api_instance = new Spinen\ConnectWise\Clients\Schedule\Api\ScheduleStatusesApi();
 $id = 56; // int | 
-$schedule_status = new \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus(); // \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus | 
+$schedule_status = new \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus(); // \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus | 
 
 try {
     $result = $api_instance->scheduleStatusesIdPut($id, $schedule_status);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **schedule_status** | [**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus.md)|  |
+ **schedule_status** | [**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/ScheduleStatus.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/ScheduleStatus.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleStatusesPost**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus scheduleStatusesPost($schedule_status)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus scheduleStatusesPost($schedule_status)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->se
 Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\Schedule\Api\ScheduleStatusesApi();
-$schedule_status = new \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus(); // \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus | 
+$schedule_status = new \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus(); // \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus | 
 
 try {
     $result = $api_instance->scheduleStatusesPost($schedule_status);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **schedule_status** | [**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus.md)|  |
+ **schedule_status** | [**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/ScheduleStatus.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus**](../Model/ScheduleStatus.md)
 
 ### Authorization
 

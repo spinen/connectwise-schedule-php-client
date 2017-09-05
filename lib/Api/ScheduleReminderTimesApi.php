@@ -96,7 +96,7 @@ class ScheduleReminderTimesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\Count
      */
     public function scheduleReminderTimesCountGet($conditions = null)
     {
@@ -113,7 +113,7 @@ class ScheduleReminderTimesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\Count, HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleReminderTimesCountGetWithHttpInfo($conditions = null)
     {
@@ -155,19 +155,19 @@ class ScheduleReminderTimesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\Count',
                 '/schedule/reminderTimes/count'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\Count', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Count', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -190,7 +190,7 @@ class ScheduleReminderTimesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]
      */
     public function scheduleReminderTimesGet($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -212,7 +212,7 @@ class ScheduleReminderTimesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[], HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleReminderTimesGetWithHttpInfo($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -274,19 +274,19 @@ class ScheduleReminderTimesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]',
                 '/schedule/reminderTimes'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -304,7 +304,7 @@ class ScheduleReminderTimesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime
      */
     public function scheduleReminderTimesIdGet($id)
     {
@@ -321,7 +321,7 @@ class ScheduleReminderTimesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime, HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleReminderTimesIdGetWithHttpInfo($id)
     {
@@ -371,19 +371,19 @@ class ScheduleReminderTimesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime',
                 '/schedule/reminderTimes/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -400,9 +400,9 @@ class ScheduleReminderTimesApi
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime
      */
     public function scheduleReminderTimesIdPatch($id, $operations)
     {
@@ -418,9 +418,9 @@ class ScheduleReminderTimesApi
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime, HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleReminderTimesIdPatchWithHttpInfo($id, $operations)
     {
@@ -479,19 +479,19 @@ class ScheduleReminderTimesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime',
                 '/schedule/reminderTimes/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -508,9 +508,9 @@ class ScheduleReminderTimesApi
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime $reminder_time  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime $reminder_time  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime
      */
     public function scheduleReminderTimesIdPut($id, $reminder_time)
     {
@@ -526,9 +526,9 @@ class ScheduleReminderTimesApi
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime $reminder_time  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime $reminder_time  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime, HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleReminderTimesIdPutWithHttpInfo($id, $reminder_time)
     {
@@ -587,19 +587,19 @@ class ScheduleReminderTimesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime',
                 '/schedule/reminderTimes/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

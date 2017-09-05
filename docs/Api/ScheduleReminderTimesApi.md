@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **scheduleReminderTimesCountGet**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count scheduleReminderTimesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\Schedule\Model\Count scheduleReminderTimesCountGet($conditions)
 
 
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleReminderTimesGet**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[] scheduleReminderTimesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[] scheduleReminderTimesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]**](../Model/ScheduleReminderTime.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime[]**](../Model/ScheduleReminderTime.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleReminderTimesIdGet**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime scheduleReminderTimesIdGet($id)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime scheduleReminderTimesIdGet($id)
 
 
 
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime**](../Model/ScheduleReminderTime.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime**](../Model/ScheduleReminderTime.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleReminderTimesIdPatch**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime scheduleReminderTimesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime scheduleReminderTimesIdPatch($id, $operations)
 
 
 
@@ -187,7 +187,7 @@ Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->se
 
 $api_instance = new Spinen\ConnectWise\Clients\Schedule\Api\ScheduleReminderTimesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->scheduleReminderTimesIdPatch($id, $operations);
@@ -203,11 +203,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime**](../Model/ScheduleReminderTime.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime**](../Model/ScheduleReminderTime.md)
 
 ### Authorization
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleReminderTimesIdPut**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime scheduleReminderTimesIdPut($id, $reminder_time)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime scheduleReminderTimesIdPut($id, $reminder_time)
 
 
 
@@ -238,7 +238,7 @@ Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->se
 
 $api_instance = new Spinen\ConnectWise\Clients\Schedule\Api\ScheduleReminderTimesApi();
 $id = 56; // int | 
-$reminder_time = new \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime(); // \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime | 
+$reminder_time = new \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime(); // \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime | 
 
 try {
     $result = $api_instance->scheduleReminderTimesIdPut($id, $reminder_time);
@@ -254,11 +254,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **reminder_time** | [**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime**](../Model/\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime.md)|  |
+ **reminder_time** | [**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime**](../Model/\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime**](../Model/ScheduleReminderTime.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleReminderTime**](../Model/ScheduleReminderTime.md)
 
 ### Authorization
 

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model;
+namespace Spinen\ConnectWise\Clients\Schedule\Model;
 
 use \ArrayAccess;
 
@@ -58,24 +58,24 @@ class ScheduleEntry implements ArrayAccess
         'id' => 'int',
         'object_id' => 'int',
         'name' => 'string',
-        'member' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\MemberReference',
-        'where' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference',
+        'member' => '\Spinen\ConnectWise\Clients\Schedule\Model\MemberReference',
+        'where' => '\Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference',
         'date_start' => '\DateTime',
         'date_end' => '\DateTime',
-        'reminder' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ReminderReference',
-        'status' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatusReference',
-        'type' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleTypeReference',
-        'span' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleSpanReference',
+        'reminder' => '\Spinen\ConnectWise\Clients\Schedule\Model\ReminderReference',
+        'status' => '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatusReference',
+        'type' => '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleTypeReference',
+        'span' => '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleSpanReference',
         'done_flag' => 'bool',
         'acknowledged_flag' => 'bool',
         'owner_flag' => 'bool',
         'allow_schedule_conflicts_flag' => 'bool',
         'add_member_to_project_flag' => 'bool',
         'project_role_id' => 'int',
-        'mobile_guid' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Guid',
+        'mobile_guid' => '\Spinen\ConnectWise\Clients\Schedule\Model\Guid',
         'close_date' => '\DateTime',
         'hours' => 'double',
-        '_info' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\Schedule\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -328,7 +328,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Gets member
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\MemberReference
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\MemberReference
      */
     public function getMember()
     {
@@ -337,7 +337,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Sets member
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\MemberReference $member Activity schedule requires a member
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\MemberReference $member Activity schedule requires a member
      * @return $this
      */
     public function setMember($member)
@@ -349,7 +349,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Gets where
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference
      */
     public function getWhere()
     {
@@ -358,7 +358,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Sets where
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference $where
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ServiceLocationReference $where
      * @return $this
      */
     public function setWhere($where)
@@ -412,7 +412,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Gets reminder
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ReminderReference
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ReminderReference
      */
     public function getReminder()
     {
@@ -421,7 +421,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Sets reminder
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ReminderReference $reminder
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ReminderReference $reminder
      * @return $this
      */
     public function setReminder($reminder)
@@ -433,7 +433,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Gets status
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatusReference
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatusReference
      */
     public function getStatus()
     {
@@ -442,7 +442,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Sets status
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatusReference $status
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatusReference $status
      * @return $this
      */
     public function setStatus($status)
@@ -454,7 +454,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Gets type
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleTypeReference
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleTypeReference
      */
     public function getType()
     {
@@ -463,7 +463,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Sets type
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleTypeReference $type
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleTypeReference $type
      * @return $this
      */
     public function setType($type)
@@ -475,7 +475,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Gets span
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleSpanReference
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleSpanReference
      */
     public function getSpan()
     {
@@ -484,7 +484,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Sets span
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleSpanReference $span
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleSpanReference $span
      * @return $this
      */
     public function setSpan($span)
@@ -622,7 +622,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Gets mobile_guid
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Guid
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\Guid
      */
     public function getMobileGuid()
     {
@@ -631,7 +631,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Sets mobile_guid
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Guid $mobile_guid
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\Guid $mobile_guid
      * @return $this
      */
     public function setMobileGuid($mobile_guid)
@@ -685,7 +685,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\Metadata
      */
     public function getInfo()
     {
@@ -694,7 +694,7 @@ class ScheduleEntry implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

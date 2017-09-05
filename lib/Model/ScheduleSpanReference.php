@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model;
+namespace Spinen\ConnectWise\Clients\Schedule\Model;
 
 use \ArrayAccess;
 
@@ -57,7 +57,7 @@ class ScheduleSpanReference implements ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'identifier' => 'string',
-        '_info' => '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\Schedule\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -200,7 +200,7 @@ class ScheduleSpanReference implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\Metadata
      */
     public function getInfo()
     {
@@ -209,7 +209,7 @@ class ScheduleSpanReference implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **scheduleEntriesCountGet**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count scheduleEntriesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\Schedule\Model\Count scheduleEntriesCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleEntriesGet**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry[] scheduleEntriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry[] scheduleEntriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry[]**](../Model/ScheduleEntry.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry[]**](../Model/ScheduleEntry.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleEntriesIdGet**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry scheduleEntriesIdGet($id)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry scheduleEntriesIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/ScheduleEntry.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/ScheduleEntry.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleEntriesIdPatch**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry scheduleEntriesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry scheduleEntriesIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->se
 
 $api_instance = new Spinen\ConnectWise\Clients\Schedule\Api\ScheduleEntriesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->scheduleEntriesIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/ScheduleEntry.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/ScheduleEntry.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleEntriesIdPut**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry scheduleEntriesIdPut($id, $schedule_entry)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry scheduleEntriesIdPut($id, $schedule_entry)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->se
 
 $api_instance = new Spinen\ConnectWise\Clients\Schedule\Api\ScheduleEntriesApi();
 $id = 56; // int | 
-$schedule_entry = new \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry(); // \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry | 
+$schedule_entry = new \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry(); // \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry | 
 
 try {
     $result = $api_instance->scheduleEntriesIdPut($id, $schedule_entry);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **schedule_entry** | [**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry.md)|  |
+ **schedule_entry** | [**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/ScheduleEntry.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/ScheduleEntry.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduleEntriesPost**
-> \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry scheduleEntriesPost($schedule_entry)
+> \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry scheduleEntriesPost($schedule_entry)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->se
 Spinen\ConnectWise\Clients\Schedule\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\Schedule\Api\ScheduleEntriesApi();
-$schedule_entry = new \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry(); // \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry | 
+$schedule_entry = new \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry(); // \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry | 
 
 try {
     $result = $api_instance->scheduleEntriesPost($schedule_entry);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **schedule_entry** | [**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry.md)|  |
+ **schedule_entry** | [**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/ScheduleEntry.md)
+[**\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleEntry**](../Model/ScheduleEntry.md)
 
 ### Authorization
 

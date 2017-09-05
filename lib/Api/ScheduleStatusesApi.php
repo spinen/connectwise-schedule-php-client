@@ -96,7 +96,7 @@ class ScheduleStatusesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\Count
      */
     public function scheduleStatusesCountGet($conditions = null)
     {
@@ -113,7 +113,7 @@ class ScheduleStatusesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\Count, HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleStatusesCountGetWithHttpInfo($conditions = null)
     {
@@ -155,19 +155,19 @@ class ScheduleStatusesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\Count',
                 '/schedule/statuses/count'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\Count', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Count', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Count', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -190,7 +190,7 @@ class ScheduleStatusesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]
      */
     public function scheduleStatusesGet($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -212,7 +212,7 @@ class ScheduleStatusesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[], HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleStatusesGetWithHttpInfo($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -274,19 +274,19 @@ class ScheduleStatusesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]',
                 '/schedule/statuses'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -379,7 +379,7 @@ class ScheduleStatusesApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -397,7 +397,7 @@ class ScheduleStatusesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus
      */
     public function scheduleStatusesIdGet($id)
     {
@@ -414,7 +414,7 @@ class ScheduleStatusesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleStatusesIdGetWithHttpInfo($id)
     {
@@ -464,19 +464,19 @@ class ScheduleStatusesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus',
                 '/schedule/statuses/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -493,9 +493,9 @@ class ScheduleStatusesApi
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus
      */
     public function scheduleStatusesIdPatch($id, $operations)
     {
@@ -511,9 +511,9 @@ class ScheduleStatusesApi
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleStatusesIdPatchWithHttpInfo($id, $operations)
     {
@@ -572,19 +572,19 @@ class ScheduleStatusesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus',
                 '/schedule/statuses/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -601,9 +601,9 @@ class ScheduleStatusesApi
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus $schedule_status  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus $schedule_status  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus
      */
     public function scheduleStatusesIdPut($id, $schedule_status)
     {
@@ -619,9 +619,9 @@ class ScheduleStatusesApi
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus $schedule_status  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus $schedule_status  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleStatusesIdPutWithHttpInfo($id, $schedule_status)
     {
@@ -680,19 +680,19 @@ class ScheduleStatusesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus',
                 '/schedule/statuses/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -708,9 +708,9 @@ class ScheduleStatusesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus $schedule_status  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus $schedule_status  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus
+     * @return \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus
      */
     public function scheduleStatusesPost($schedule_status)
     {
@@ -725,9 +725,9 @@ class ScheduleStatusesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for Schedule API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus $schedule_status  (required)
+     * @param \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus $schedule_status  (required)
      * @throws \Spinen\ConnectWise\Clients\Schedule\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleStatusesPostWithHttpInfo($schedule_status)
     {
@@ -774,19 +774,19 @@ class ScheduleStatusesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus',
+                '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus',
                 '/schedule/statuses'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\ScheduleStatus', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Schedule\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
