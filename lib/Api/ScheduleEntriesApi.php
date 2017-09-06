@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Schedule\Spinen\ConnectWise\Clients\Schedule\Api;
+namespace Spinen\ConnectWise\Clients\Schedule\Api;
 
 use \Spinen\ConnectWise\Clients\Schedule\ApiClient;
 use \Spinen\ConnectWise\Clients\Schedule\ApiException;
